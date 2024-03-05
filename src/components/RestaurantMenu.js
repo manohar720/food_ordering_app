@@ -6,7 +6,6 @@ import { RestaurantCategory } from "./RestaurantCategory";
 
 const RestaurantMenu = () => {
   const [restInfo, setRestInfo] = useState(null);
-  console.log("[restInfo: ", restInfo);
 
   const { resId } = useParams();
   const [showIndex, setShowIndex] = useState(false);
@@ -16,10 +15,6 @@ const RestaurantMenu = () => {
   }, []);
   const fetchMenu = async () => {
     const data = await fetch(MENU_API + resId);
-
-    // const data = await fetch(
-    //   "https://manohar.free.beeceptor.com/swiggy-api-regular-menu"
-    // );
 
     const json = await data.json();
 
@@ -36,7 +31,6 @@ const RestaurantMenu = () => {
         c.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
-  console.log("heilo", categories);
 
   return (
     <div className="Menu text-center">

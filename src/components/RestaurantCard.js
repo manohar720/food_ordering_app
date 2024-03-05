@@ -7,6 +7,7 @@ const RestaurantCard = (props) => {
     <div className="res-card rounded-lg ">
       <div className="top-section">
         <img
+          alt="image-logo"
           className="res-logo rounded-lg"
           src={CDN_URL + cloudinaryImageId}
         ></img>
