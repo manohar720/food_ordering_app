@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/food_ordering_app/static/css/main.8c14d277.css",
+    "main.js": "/food_ordering_app/static/js/main.67b1fe35.js",
+    "static/js/592.39913006.chunk.js": "/food_ordering_app/static/js/592.39913006.chunk.js",
+    "static/media/contact.jpg": "/food_ordering_app/static/media/contact.9926101f03d1dad90be3.jpg",
+    "static/media/burger-image.ec55d069.png": "/food_ordering_app/static/media/burger-image.ec55d069.33d6509d3448a197de2b.png",
+    "index.html": "/food_ordering_app/index.html",
+    "main.8c14d277.css.map": "/food_ordering_app/static/css/main.8c14d277.css.map",
+    "main.67b1fe35.js.map": "/food_ordering_app/static/js/main.67b1fe35.js.map",
+    "592.39913006.chunk.js.map": "/food_ordering_app/static/js/592.39913006.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c14d277.css",
+    "static/js/main.67b1fe35.js"
+  ]
+}
