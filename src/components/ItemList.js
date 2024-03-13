@@ -27,6 +27,7 @@ export const ItemList = (item) => {
                 <img
                   src={CDN_URL + itemCards.card.info.imageId}
                   className="w-full rounded-lg"
+                  alt="menu"
                 ></img>
               </div>
             </div>

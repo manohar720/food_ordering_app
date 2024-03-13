@@ -19,7 +19,7 @@ export const Login = () => {
         </div>
 
         <div className=" cursor-pointer text-blue-800 text-sm">
-          <a href="#">Forgotten Password?</a>
+          <a href="/">Forgotten Password?</a>
         </div>
 
         <div>
@@ -29,7 +29,7 @@ export const Login = () => {
         </div>
 
         <div className="cursor-pointer text-blue-800 text-sm">
-          <a href="#"> or Sign up Using</a>
+          <a href="/"> or Sign up Using</a>
         </div>
       </div>
     </div>
