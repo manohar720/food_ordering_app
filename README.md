@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Redux Toolkit
+
+-install @redux.js/toolkit abd redux-react
+Build Our Store
+connect store to our app
+-creat Cart Slice
+-Dispatch(Action)

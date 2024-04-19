@@ -7,6 +7,9 @@ import UserContext from "./utils/userContext";
 import "./index.css";
 import { Outlet } from "react-router-dom";
 
+import appStore from "./utils/appStore";
+import { Provider } from "react-redux";
+
 function AppLayout() {
   const [userName, setUserName] = useState();
   //authentication
@@ -19,12 +22,14 @@ function AppLayout() {
     setUserName(apiData.name);
   });
   return (
-    <UserContext.Provider value={{ loggedInUser: userName }}>
-      <div className="App">
-        <Header />
-        <Outlet />
-      </div>
-    </UserContext.Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+        <div className="App">
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 }
 

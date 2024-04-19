@@ -1,13 +1,18 @@
 import { LOGO_URL } from "../utils/constant";
 import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useContext } from "react";
+
 import UserContext from "../utils/userContext";
 
 import OnlineStatus from "../utils/onlineStatus";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const onlineStatus = OnlineStatus();
   const { loggedInUser } = useContext(UserContext);
+
+  //Subscribing to the store using as Selector
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <div className="header">
@@ -27,7 +32,7 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
 
-          <li>Cart</li>
+          <li>Cart:{cartItems.length}Items</li>
           <li>
             <Link to="/login">Login</Link>
           </li>

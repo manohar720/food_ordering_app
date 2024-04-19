@@ -1,4 +1,3 @@
-import { CONTACT_IMG_URL } from "../utils/constant";
 const Contact = () => {
   return (
     <div className="contact-container ">
