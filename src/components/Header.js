@@ -13,6 +13,7 @@ const Header = () => {
 
   //Subscribing to the store using as Selector
   const cartItems = useSelector((store) => store.cart.items);
+  console.log(" cartItemsHeadrer: ", cartItems);
 
   return (
     <div className="header">
@@ -32,7 +33,10 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
 
-          <li>Cart:{cartItems.length}Items</li>
+          <li>
+            {" "}
+            <Link to="/Cart">Cart-{cartItems.length}Items</Link>
+          </li>
           <li>
             <Link to="/login">Login</Link>
           </li>
